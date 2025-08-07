@@ -7,6 +7,7 @@
 #include <iomanip>
 #include <limits> // Required for numeric_limits
 
+#include "display.cpp"
 using namespace std;
 
 struct Student {
@@ -364,6 +365,7 @@ void ShowMenu() {
 }
 
 int main() {
+    showTitle();
     StudentManagementSystem system;
     system.loadFromFile();
 
